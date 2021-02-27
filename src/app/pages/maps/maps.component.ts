@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 
 declare var google: any;
 
@@ -8,24 +8,33 @@ declare var google: any;
     templateUrl: 'maps.component.html'
 })
 
-export class MapsComponent implements OnInit {
-    ngOnInit() {
-        var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
-        var mapOptions = {
-          zoom: 13,
-          center: myLatlng,
-          scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
-          styles: [{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]
-
-        }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"Hello World!"
-        });
-
-        // To add the marker to the map, call setMap();
-        marker.setMap(map);
+export class MapsComponent {
+    @ViewChild('videoPlayer') videoplayer: any;
+    name = 'Video events';
+    videoSource = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4";
+    public startedPlay: boolean = false;
+    public show: boolean = false;
+  
+    scroll(el: HTMLElement) {
+        el.scrollIntoView({ behavior: 'smooth' });
     }
-}
+    
+    pauseVideo(videoplayer) {
+        videoplayer.nativeElement.play();
+        // this.startedPlay = true;
+        // if(this.startedPlay == true)
+        // {
+        setTimeout(() => {
+            videoplayer.nativeElement.pause();
+            if (videoplayer.nativeElement.paused) {
+                this.show = !this.show;
+            }
+        }, 5000);
+        // }
+    }
+  
+    closebutton(videoplayer) {
+        this.show = !this.show;
+        videoplayer.nativeElement.play();
+    }
+}  

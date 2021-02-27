@@ -1,13 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-    selector: 'notifications-cmp',
-    moduleId: module.id,
-    templateUrl: 'notifications.component.html',
-    styleUrls: ['./notifications.component.css']
+  selector: 'app-contention',
+  templateUrl: './contention.component.html',
+  styleUrls: ['./contention.component.css']
 })
-
-export class NotificationsComponent{
+export class ContentionComponent {
   @ViewChild('videoPlayer') videoplayer: any;
   name = 'Video events';
   videoSource = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4";

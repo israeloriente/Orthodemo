@@ -12,13 +12,17 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { NgxElectronModule } from 'ngx-electron'; 
+import { NgxElectronModule } from 'ngx-electron';
+import { HigieneComponent } from './pages/higiene/higiene.component';
+import { ContentionComponent } from './pages/contention/contention.component'; 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    HigieneComponent,
+    ContentionComponent
   ],
   imports: [
     BrowserAnimationsModule,

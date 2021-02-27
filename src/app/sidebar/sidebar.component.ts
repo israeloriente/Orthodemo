@@ -9,13 +9,14 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard',     title: 'Higiène',         icon:'nc-single-02',       class: '' },
-    { path: '/icons',         title: 'Interception',             icon:'nc-satisfied',    class: '' },
+    { path: '/dashboard',     title: 'Un beau sourire',         icon:'nc-satisfied',       class: '' },
+    { path: '/higiene',     title: 'Higiène',         icon:'nc-single-02',       class: '' },
+    { path: '/icons',         title: 'Interception',             icon:'nc-palette',    class: '' },
+    { path: '/notifications', title: 'Multibagues',     icon:'nc-vector',    class: '' },
     { path: '/maps',          title: 'Orthocaps',              icon:'nc-air-baloon',      class: '' },
-    { path: '/notifications', title: 'Multibagues',     icon:'nc-button-play',    class: '' },
-    { path: '/user',          title: 'Orthocaps',      icon:'nc-single-02',  class: '' },
-    { path: '/table',         title: 'Chirurgie',        icon:'nc-air-baloon',    class: '' },
-    { path: '/typography',    title: 'Contention',        icon:'nc-trophy', class: '' },
+    { path: '/contention',    title: 'Contention',        icon:'nc-trophy', class: '' },
+    { path: '/table',         title: 'Chirurgie',        icon:'nc-ambulance',    class: '' },
+    { path: '/typography',    title: 'Dents de sagesse',        icon:'nc-app', class: '' },
 
 ];
 
