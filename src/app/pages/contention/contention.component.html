@@ -1,39 +1,63 @@
-<p >Lorem ip lkdnls fdslf sdflskdnflksd</p>
+
 
 <div class="row">
     <div class="col-lg-3 col-md-6 col-sm-6"></div>
     <div class="col-lg-3 col-md-6 col-sm-6">
-      <div class="card" style="height: 150px" (click)="scroll(fil)">
-        <h5 style=" margin: auto;">FIL</h5>
+      <div class="card" style="height: 150px; background-color: rgb(237, 107, 51)" (click)="scroll(fil)">
+        <h5 style=" margin: auto;color: seashell;">Les fils</h5>
       </div>
     </div>
   
     <div class="col-lg-3 col-md-6 col-sm-6">
-      <div class="card" style="height: 150px" (click)="scroll(gouthieres)">
-        <h5 style=" margin: auto;">gouthieres</h5>
+      <div class="card" style="height: 150px ; background-color: rgb(237, 107, 51);" (click)="scroll(gouthieres)">
+        <h5 style=" margin: auto;color: seashell;">Les gouttières</h5>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6"></div>
 </div>
 
+<hr>
+
 <br #fil>
-<p>Texto aqui escrevendo bem devagar e rápido</p>
+<h6>Les fils</h6>
 <div class="card" style="width: 50%; margin: auto;">
     <video controls (canplay)="pauseVideo(videoplayer)"
       #videoPlayer>
-    <source src="{{videoSource}}" type="video/mp4">
+    <source src="../../../assets/RESSOURCES/6-Contentions/Fil_contention.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
 </div>
 
-<br><br><br><br><br><br>
-
+<br>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card" style="height: 300px">
+      <img src="../../../assets/RESSOURCES/6-Contentions/mars_2013.png" alt="">
+      <p style="margin: auto;">Mars 2013</p> 
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" style="height: 300px">
+      <img src="../../../assets/RESSOURCES/6-Contentions/avril_2015.png">
+      <p style="margin: auto;">Avril 2015</p> 
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" style="height: 300px">
+      <img src="../../../assets/RESSOURCES/6-Contentions/mars_2016.png" alt="">
+     <p style="margin: auto;">Mars 2016</p> 
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+<hr>
 <br #gouthieres>
-<p>Texto aqui escrevendo bem devagar e rápido</p>
+<h6>Les gouttières</h6>
 <div class="card" style="width: 50%; margin: auto;">
     <video controls (canplay)="pauseVideo(videoplayer)"
       #videoPlayer>
-    <source src="{{videoSource}}" type="video/mp4">
+    <source src="../../../assets/RESSOURCES/6-Contentions/Gouttieres_occlusales.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
 </div>
+<br><br><br><br>
