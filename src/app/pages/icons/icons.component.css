@@ -1,4 +1,4 @@
-/* .card {
+.card {
     cursor: pointer;
 }
 
@@ -45,9 +45,9 @@
   }
   
   .button-greencolor{
-        background-color: #4CAF50; 
+        background-color: #4CAF50; /* Green */
   }
   
   .button-redcolor{
-        background-color: #f44336; 
-  } */
+        background-color: #f44336; /* Green */
+  }

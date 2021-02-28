@@ -1,9 +1,8 @@
 
 <div class="row">
-  <div class="col-lg-3 col-md-6 col-sm-6"></div>
   <div class="col-lg-3 col-md-6 col-sm-6">
     <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)"  (click)="scroll(classico)">
-      <h5 style=" margin: auto;color: seashell">Traitement Classique</h5>
+      <h5 style=" margin: auto;color: seashell; text-align: center;">Traitements Vestibulaires</h5>
     </div>
   </div>
 
@@ -12,15 +11,24 @@
       <h5 style=" margin: auto; color: seashell;">Traitement Lingual</h5>
     </div>
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-6"></div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card" style="height: 150px ; background-color: rgb(237, 107, 56);" (click)="scroll(canina)">
+      <h5 style=" margin: auto; color: seashell;">Traction Canine</h5>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card" style="height: 150px ; background-color: rgb(237, 107, 56);" (click)="scroll(chainettes)">
+      <h5 style=" margin: auto; color: seashell;">Chainettes</h5>
+    </div>
+  </div>
 </div>
 
 <hr>
 
 <br #classico>
-<h6>Traitement Classique</h6>
+<h6>Traitement Vestibulaire</h6>
 <div class="card" style="width: 50%; margin: auto;">
-  <video controls (canplay)="pauseVideo(videoplayer)"
+  <video controls 
     #videoPlayer>
   <source src="../../../assets/RESSOURCES/4-Multibagues/VESTIBULAIRE/video_vestibulaire.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -53,7 +61,7 @@
 <br #lingual>
 <h6>Traitement Lingual</h6>
 <div class="card" style="width: 50%; margin: auto;">
-  <video controls (canplay)="pauseVideo(videoplayer)"
+  <video controls 
     #videoPlayer>
   <source src="../../../assets/RESSOURCES/4-Multibagues/LINGUAL/video_lingual.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -83,41 +91,41 @@
 
 <hr>
 
-<h6>Comment entretenir son appareil ?</h6>
 
-  <p style="text-align: justify;">Après la pose des bagues, vous allez ressentir une gêne passagère, lors de la mastication, à partir du lendemain matin et ce pendant 4 ou 5 jours. Mangez des aliments plus mous : purées, viandes hachées, compotes, fromages frais, pain de mie… et n’hésitez pas à soulager cette tension par les comprimés que vous prenez habituellement contre les maux de tête.
-Les premiers jours, les bagues et les boîtiers peuvent parfois irriter les joues ou les lèvres. Pour soulager ces douleurs, vous pourrez emballer les boîtiers orthodontiques gênants avec de la cire, et appliquer le gel sur les muqueuses.</p>
+<br #canina>
+<h6>Traction Canine</h6>
 <div class="card" style="width: 50%; margin: auto;">
-  <video controls (canplay)="pauseVideo(videoplayer)"
-    #videoPlayer>
-  <source src="../../../assets/RESSOURCES/4-Multibagues/CUIDADOS/video_bonbons.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-  <br>
-  <h6 style="margin: auto;">Effet des bonbons sur les boitiers</h6> 
-  <br>
+    <video controls (canplay)="pauseVideo(videoplayer)"
+      #videoPlayer>
+    <source src="../../../assets/RESSOURCES/7-Chirurgies/Inclusion Canine.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
 </div>
 <br>
-<div class="card" style="width: 50%; margin: auto;">
-  <video controls (canplay)="pauseVideo(videoplayer)"
-    #videoPlayer>
-  <source src="../../../assets/RESSOURCES/4-Multibagues/CUIDADOS/video_application cire ortho.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-  <br>
-  <h6 style="margin: auto; text-align: center;">Si les boitiers vous blessent, vous pouvez appliquer de la cire orthodontique</h6> 
-  <br>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card" style="height: 300px">
+      <img src="../../../assets/RESSOURCES/7-Chirurgies/fotos_tractions/désinclusion chir de dent ankylosé copie.JPG" alt="">
+ 
+      <h6 style="margin: auto; text-align: center;">La canine incluse est tractée pour atteindre le plan oclusal </h6>
+    </div>
+  </div>
+  <div class="col">
+      <img src="../../../assets/RESSOURCES/7-Chirurgies/fotos_tractions/désinclusion chir de dent ankylosé.JPG" alt="">
+  </div>
 </div>
-<br>
+
+<hr>
+
+<br #chainettes>
+<h6>Comment fonctionnent les chainettes ? </h6>
 <div class="card" style="width: 50%; margin: auto;">
-  <video controls (canplay)="pauseVideo(videoplayer)"
+  <video controls 
     #videoPlayer>
   <source src="../../../assets/RESSOURCES/4-Multibagues/CUIDADOS/video_chainette.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
 </div>
-
-
 
 <!-- <div class="row">
   <div class="col-md-12">

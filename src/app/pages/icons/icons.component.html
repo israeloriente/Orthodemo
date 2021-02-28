@@ -1,18 +1,10 @@
 
 
 <div class="row">
-<h6>Qu'est ce que c'est ?</h6>
-<p style="text-align: justify;">Un traitement d’interception est préconisé chez des patients de bas âges dont la dentition présente différents problèmes.
-  Face à ces différents problèmes, l’orthodontiste peut intervenir le plus tôt possible, augmentant alors les chances que les dents du très jeune patient puissent se développer le plus normalement possible. Quoi qu’il en soit, il n’est pas toujours facile ni évident de savoir à quel moment le traitement doit être mis en place. Le praticien doit non seulement tenir compte de la situation actuelle, mais également de l’évolution possible des dents et de la face de l’enfant : le visage continue encore de « grandir », de même que les dents. En outre, le développement diffère en fonction de l’individu.
-  </p>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)" (click)="scroll(Eruption)">
-      <h5 style=" margin: auto; color: seashell;">Éruption</h5>
-    </div>
-  </div>
+
   <div class="col-lg-3 col-md-6 col-sm-6">
     <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)" (click)="scroll(palatine)">
-      <h5 style=" margin: auto; color: seashell;">Bielles de Herbs</h5>
+      <h5 style=" margin: auto; color: seashell;">Bielles de Herbst</h5>
     </div>
   </div>
   <div class="col-lg-3 col-md-6 col-sm-6">
@@ -22,27 +14,35 @@
   </div>
   <div class="col-lg-3 col-md-6 col-sm-6">
     <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)" (click)="scroll(linguale)">
-      <h5 style=" margin: auto; color: seashell;">Grille linguale</h5>
+      <h5 style=" margin: auto; color: seashell;">ELN / Grille linguale</h5>
     </div>
   </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)" (click)="scroll(verin)">
+      <h5 style=" margin: auto; color: seashell;">Plaque palatine à verin</h5>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+   
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)" (click)="scroll(ressort)">
+      <h5 style=" margin: auto; color: seashell;text-align: center;">Plaque palatine à ressort</h5>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card" style="height: 150px; background-color:rgb(237, 107, 56)" (click)="scroll(fonction)">
+      <h5 style=" margin: auto; color: seashell;">Appareil fonctionnel</h5>
+    </div>
+  </div>
+ 
 </div>
 
 <hr>
 
-<br #Eruption>
-<h6>Éruption</h6>
-<div class="card" style="width: 50%; margin: auto;">
-  <video controls (canplay)="pauseVideo(videoplayer)"
-    #videoPlayer>
-  <source src="../../../assets/RESSOURCES/3-Appareils fonctionnels/eruption dentaire.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-</div>
-
-<hr>
 
 <br #palatine>
-<h6>Bielles de Herbs</h6>
+<h6>Bielles de Herbst</h6>
 <p> Ces activateurs utilisent de petites tiges métalliques (bielles) qui relient l’appareil du haut à l’appareil du bas et « poussent » la mandibule en avant.</p>
 <div class="card" style="width: 50%; margin: auto;">
   <video controls (canplay)="pauseVideo(videoplayer)"
@@ -73,7 +73,7 @@
 
 
 <br #Disjoncteur>
-<h6>Disjoncteur</h6>
+<h6>Les Disjoncteurs</h6>
 <p>Ils permettent d'élargir ou de retrecir progressivement les arcades dentaires, afin de créer de l'espace pour  :
   - d'élargir les fosses nasales et donc favorise une bonne respiration                                                  
   - de corriger l'emboitement dentaire latéral
@@ -81,11 +81,11 @@
   Il en existe pour le maxilaire (arcade superieure) et pour la mandibule (arcade inférieure). 
 </p>
 
-<h5>Disjoncteur palatin</h5>
+<h5 style="text-align: center;">Disjoncteur palatin</h5>
 <div class="card" style="width: 50%; margin: auto;">
   <video controls (canplay)="pauseVideo(videoplayer)"
     #videoPlayer>
-  <source src="../../../assets/RESSOURCES/3-Appareils fonctionnels/disjoncteurs/video_palatin.mp4" type="video/mp4">
+  <source src="../../../assets/RESSOURCES/3-Appareils fonctionnels/" type="video/mp4">
   Your browser does not support the video tag.
   </video>
 </div>
@@ -102,7 +102,9 @@
   </div>
 </div>
 
-<h5>Disjoncteur de Shwartz (mandibulaire)</h5>
+<br><br><br>
+
+<h5 style="text-align: center;">Disjoncteur mandibulaire</h5>
 <div class="card" style="width: 50%; margin: auto;">
   <video controls (canplay)="pauseVideo(videoplayer)"
     #videoPlayer>
@@ -138,7 +140,6 @@
 
 <br #linguale>
 <h6>Grille linguale</h6>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
 <div class="card" style="width: 50%; margin: auto;">
   <video controls (canplay)="pauseVideo(videoplayer)"
     #videoPlayer>
@@ -159,6 +160,77 @@
   </div>
 </div>
 
+<hr>
+<br #verin>
+<h6>Plaque palatine à verin</h6>
+<div class="card" style="width: 50%; margin: auto;">
+  <video controls (canplay)="pauseVideo(videoplayer)"
+    #videoPlayer>
+  <source src="../../../assets/RESSOURCES/3-Appareils fonctionnels/disjoncteurs/video_palatin.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card" style="height: 300px">
+<img src="" alt="">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card" style="height: 300px">
+      <img src="" alt="">
+    </div>
+  </div>
+</div>
+
+<hr>
+<br #ressort>
+<h6>Plaque palatine à ressort</h6>
+<div class="card" style="width: 50%; margin: auto;">
+  <video controls (canplay)="pauseVideo(videoplayer)"
+    #videoPlayer>
+  <source src="../../../assets/RESSOURCES/3-Appareils fonctionnels/" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card" style="height: 300px">
+<img src="" alt="">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card" style="height: 300px">
+      <img src="" alt="">
+    </div>
+  </div>
+</div>
+
+<hr>
+<br #fonction>
+<h6>Appareil fonctionnel</h6>
+<div class="card" style="width: 50%; margin: auto;">
+  <video controls (canplay)="pauseVideo(videoplayer)"
+    #videoPlayer>
+  <source src="../../../assets/RESSOURCES/3-Appareils fonctionnels/" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card" style="height: 300px">
+<img src="" alt="">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card" style="height: 300px">
+      <img src="" alt="">
+    </div>
+  </div>
+</div>
 
 
 <!-- <div class="row">
