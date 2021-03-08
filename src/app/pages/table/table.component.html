@@ -1,26 +1,29 @@
 
-
+<!-- CHIRURGIE -->
 <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <div class="card" style="height: 150px ; background-color:rgb(237, 107, 56);" (click)="scroll(c3)">
+      <div class="card" style="height: 150px ; background-color:rgba(7, 145, 199, 0.637);" (click)="scroll(c3)">
         <h5 style=" margin: auto; color: seashell;">Correction classe 3</h5>
       </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <div class="card" style="height: 150px ; background-color: rgb(237, 107, 56);" (click)="scroll(c2)">
+      <div class="card" style="height: 150px ; background-color: rgba(7, 145, 199, 0.637);" (click)="scroll(c2)">
         <h5 style=" margin: auto; color: seashell;">Corretion classe 2</h5>
       </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <div class="card" style="height: 150px ; background-color: rgb(237, 107, 56);" (click)="scroll(endo)">
+      <div class="card" style="height: 150px ; background-color: rgba(7, 145, 199, 0.637);" (click)="scroll(endo)">
         <h5 style=" margin: auto; color: seashell;">Endognathie</h5>
       </div>
     </div>
   
 </div>
+<hr>
+
+<!----------------------------------------------------------------------->
 
 <br #c3>
-<h6>Correction classe 3</h6>
+<h6>Correction classe 3</h6> <br>
 <div class="card" style="width: 50%; margin: auto;">
     <video controls (canplay)="pauseVideo(videoplayer)"
       #videoPlayer>
@@ -42,8 +45,10 @@
 
 <hr>
 
+
+<!----------------------------------------------------------------------->
 <br #c2>
-<h6>Correction classe 2</h6>
+<h6>Correction classe 2</h6><br>
 <div class="card" style="width: 50%; margin: auto;">
     <video controls (canplay)="pauseVideo(videoplayer)"
       #videoPlayer>
@@ -65,8 +70,10 @@
 
 <hr>
 
+
+<!----------------------------------------------------------------------->
 <br #endo>
-<h6>Endoganthie</h6>
+<h6>Endoganthie</h6><br>
 <div class="card" style="width: 50%; margin: auto;">
     <video controls (canplay)="pauseVideo(videoplayer)"
       #videoPlayer>

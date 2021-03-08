@@ -18,19 +18,19 @@ export class IconsComponent {
         el.scrollIntoView({ behavior: 'smooth' });
     }
     
-    pauseVideo(videoplayer) {
-        videoplayer.nativeElement.play();
-        // this.startedPlay = true;
-        // if(this.startedPlay == true)
-        // {
-        setTimeout(() => {
-            videoplayer.nativeElement.pause();
-            if (videoplayer.nativeElement.paused) {
-                this.show = !this.show;
-            }
-        }, 5000);
-        // }
-    }
+    // pauseVideo(videoplayer) {
+    //     videoplayer.nativeElement.play();
+    //     // this.startedPlay = true;
+    //     // if(this.startedPlay == true)
+    //     // {
+    //     setTimeout(() => {
+    //         videoplayer.nativeElement.pause();
+    //         if (videoplayer.nativeElement.paused) {
+    //             this.show = !this.show;
+    //         }
+    //     }, 5000);
+    //     // }
+    // }
 
     closebutton(videoplayer) {
         this.show = !this.show;
