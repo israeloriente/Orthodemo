@@ -1,22 +1,21 @@
-
 <!-- CHIRURGIE -->
 <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4">
-      <div class="card" style="height: 150px ; background-color:rgba(7, 145, 199, 0.637);" (click)="scroll(c3)">
-        <h5 style=" margin: auto; color: seashell;">Correction classe 3</h5>
-      </div>
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="card" style="height: 150px ; background-color:rgba(7, 145, 199, 0.637);" (click)="scroll(c3)">
+      <h5 style=" margin: auto; color: seashell;">Correction classe 3</h5>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4">
-      <div class="card" style="height: 150px ; background-color: rgba(7, 145, 199, 0.637);" (click)="scroll(c2)">
-        <h5 style=" margin: auto; color: seashell;">Corretion classe 2</h5>
-      </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="card" style="height: 150px ; background-color: rgba(7, 145, 199, 0.637);" (click)="scroll(c2)">
+      <h5 style=" margin: auto; color: seashell;">Corretion classe 2</h5>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4">
-      <div class="card" style="height: 150px ; background-color: rgba(7, 145, 199, 0.637);" (click)="scroll(endo)">
-        <h5 style=" margin: auto; color: seashell;">Endognathie</h5>
-      </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="card" style="height: 150px ; background-color: rgba(7, 145, 199, 0.637);" (click)="scroll(endo)">
+      <h5 style=" margin: auto; color: seashell;">Endognathie</h5>
     </div>
-  
+  </div>
+
 </div>
 <hr>
 
@@ -25,22 +24,24 @@
 <br #c3>
 <h6>Correction classe 3</h6> <br>
 <div class="card" style="width: 50%; margin: auto;">
-    <video controls (canplay)="pauseVideo(videoplayer)"
-      #videoPlayer>
+  <video controls (canplay)="pauseVideo(videoplayer)" #videoPlayer>
     <source src="../../../assets/RESSOURCES/7-Chirurgies/video_chir_retrusionCL3.mp4" type="video/mp4">
     Your browser does not support the video tag.
-    </video>
+  </video>
 </div>
 <br>
+
 <div class="row">
-  <div class="col-md-6">
-    <div class="card" style="height: 300px">
-    </div>
+  <div class="card" style="width: 900px;display: block;margin: auto;">
+    <img src="../../../assets/RESSOURCES/7-Chirurgies/class3fotos/25:06:2006.png" alt="">
   </div>
-  <div class="col-md-6">
-    <div class="card" style="height: 300px">
-    </div>
-  </div>
+</div>
+
+
+<div class="row">
+<div class="card" style="width: 900px;display: block;margin: auto;">
+  <img src="../../../assets/RESSOURCES/7-Chirurgies/class3fotos/12:12:2008.png" alt="">
+</div>
 </div>
 
 <hr>
@@ -50,11 +51,10 @@
 <br #c2>
 <h6>Correction classe 2</h6><br>
 <div class="card" style="width: 50%; margin: auto;">
-    <video controls (canplay)="pauseVideo(videoplayer)"
-      #videoPlayer>
+  <video controls (canplay)="pauseVideo(videoplayer)" #videoPlayer>
     <source src="../../../assets/RESSOURCES/7-Chirurgies/Mandibular_advancement.mp4" type="video/mp4">
     Your browser does not support the video tag.
-    </video>
+  </video>
 </div>
 <br>
 <div class="row">
@@ -75,11 +75,10 @@
 <br #endo>
 <h6>Endoganthie</h6><br>
 <div class="card" style="width: 50%; margin: auto;">
-    <video controls (canplay)="pauseVideo(videoplayer)"
-      #videoPlayer>
+  <video controls (canplay)="pauseVideo(videoplayer)" #videoPlayer>
     <source src="../../../assets/RESSOURCES/" type="video/mp4">
     Your browser does not support the video tag.
-    </video>
+  </video>
 </div>
 <br>
 <div class="row">
