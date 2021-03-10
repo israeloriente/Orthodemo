@@ -1,7 +1,8 @@
 {
-  "name": "paper-dashboard-angular",
-  "version": "2.2.0",
+  "name": "Orthodemo",
+  "version": "1.0.0",
   "license": "MIT",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
@@ -9,9 +10,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "electron": "ng build && electron .",
     "pack": "npx electron-builder --dir",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "electron": "electron .",
+    "electron-build": "ng build && electron .",
+    "electron-package-win": "ng build && electron-packager . --no-prune --ignore=/node_modules --ignore=/e2e --ignore=/src --overwrite"
   },
   "private": true,
   "dependencies": {
