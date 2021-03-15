@@ -28,8 +28,9 @@ import { ContentionComponent } from './pages/contention/contention.component';
     BrowserAnimationsModule,
     NgxElectronModule,
     RouterModule.forRoot(AppRoutes,{
-      useHash: true
-    }),
+    useHash: true,
+    relativeLinkResolution: 'legacy'
+}),
     SidebarModule,
     NavbarModule,
     ToastrModule.forRoot(),
