@@ -9,6 +9,7 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
+    { path: '/upgrade',    title: 'Bilan',        icon:'nc-chat-33', class: '' },
     { path: '/higiene',     title: 'Hygiène',         icon:'nc-single-02',       class: '' },
     { path: '/icons',         title: 'Interception',             icon:'nc-palette',    class: '' },
     { path: '/notifications', title: 'Multibagues',     icon:'nc-vector',    class: '' },
@@ -16,6 +17,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/contention',    title: 'Contention',        icon:'nc-trophy', class: '' },
     { path: '/table',         title: 'Chirurgie',        icon:'nc-ambulance',    class: '' },
     { path: '/typography',    title: 'Dents de sagesse',        icon:'nc-app', class: '' },
+
 
 ];
 
